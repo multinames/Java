@@ -1,2 +1,4 @@
-HelloServlet.class
 ru\dgpg\spring\HelloController.class
+ru\dgpg\spring\config\SpringConfig.class
+ru\dgpg\spring\config\MySpringMvcDispatcherSerlvetIntitializer.class
+HelloServlet.class
