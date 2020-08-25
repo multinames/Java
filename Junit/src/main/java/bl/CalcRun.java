@@ -8,14 +8,21 @@ public class CalcRun implements Calculator{
     }
 
     public int sub(int a, int b) {
-        return 0;
+         return a-b;
     }
 
     public int mul(int a, int b) {
-        return 0;
+
+        return a*b;
     }
 
     public int div(int a, int b) {
-        return 0;
+        int result = 0;
+        try {
+            result = a/b;
+        }catch (ArithmeticException e) {
+            System.out.println("Divisor by zero possible");
+        }
+        return result;
     }
 }
