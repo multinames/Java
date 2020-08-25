@@ -21,7 +21,7 @@ public class CalcRun implements Calculator{
         try {
             result = a/b;
         }catch (ArithmeticException e) {
-            System.out.println("Divisor by zero possible");
+            System.out.println("Divisor by zero not possible");
         }
         return result;
     }

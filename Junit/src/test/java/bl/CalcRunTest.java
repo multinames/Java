@@ -75,8 +75,29 @@ class CalcRunTest {
         assertEquals(expectedResult1, actualResult1);
 
         //case 2
-        int expectedResult2 = 5;
-        int actualResult2= calculator.div(10,2);
+        int expectedResult2 = -5;
+        int actualResult2= calculator.div(-10,2);
         assertEquals(expectedResult2, actualResult2);
+
+        //case 3
+        int expectedResult3 = -5;
+        int actualResult3 = calculator.div(10,-2);
+        assertEquals(expectedResult3, actualResult3);
+
+        //case 4
+        int expectedResult4 = 0;
+        int actualResult4 = calculator.div(10,0);
+        assertEquals(expectedResult4, actualResult4);
+
+        //case 5
+        int expectedResult5 = 0;
+        int actualResult5 = calculator.div(0,0);
+        assertEquals(expectedResult5, actualResult5);
+
+        //case 6
+        int expectedResult6 = 0;
+        int actualResult6 = calculator.div(0,2);
+        assertEquals(expectedResult6, actualResult6);
+
     }
 }
